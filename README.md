@@ -1,6 +1,4 @@
-```
 [![CircleCI](https://circleci.com/gh/dmavridis/ML-microservice-kubernetes.svg?style=svg)](https://circleci.com/gh/dmavridis/ML-microservice-kubernetes)
-```
 
 ## Project Overview
 
@@ -39,7 +37,7 @@ Your project goal is to operationalize this working, machine learning microservi
 
 * Upload a complete Github repo with CircleCI to indicate that your code has been tested
 
-You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
+You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view). Check the  [REPORT](REPORT.md) file for details.
 
 **The final implementation of the project will showcase your abilities to operationalize production microservices.**
 
