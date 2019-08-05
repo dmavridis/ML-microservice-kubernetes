@@ -1,4 +1,4 @@
-POST http://localhost:5001/predict
+POST http://localhost:8000/predict
 content-type: application/json
 
 {  

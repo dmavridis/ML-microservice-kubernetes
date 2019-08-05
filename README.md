@@ -1,4 +1,6 @@
+```
 [![CircleCI](https://circleci.com/gh/dmavridis/ML-microservice-kubernetes.svg?style=svg)](https://circleci.com/gh/dmavridis/ML-microservice-kubernetes)
+```
 
 ## Project Overview
 
@@ -9,12 +11,32 @@ You are given a pre-trained, `sklearn` model that has been trained to predict ho
 ### Project Tasks
 
 Your project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
-* Test your project code using linting
+* Test your project code using linting: `make lint`
+
 * Complete a Dockerfile to containerize this application
-* Deploy your containerized application using Docker and make a prediction
+
+* Deploy your containerized application using Docker and make a prediction: 
+
+  ```
+  ./run_docker.sh
+  ./upload_docker.sh
+  ./make_prediction.sh
+  ```
+
 * Improve the log statements in the source code for this application
+
 * Configure Kubernetes and create a Kubernetes cluster
+
 * Deploy a container using Kubernetes and make a prediction
+
+  ```
+  kubectl start
+  ./run_kubernetes.sh
+  ./make_prediction.sh
+  ```
+
+  
+
 * Upload a complete Github repo with CircleCI to indicate that your code has been tested
 
 You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
@@ -26,6 +48,12 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 ## Setup the Environment
 
 * Create a virtualenv and activate it
+
+  ```python
+  python3 -m venv ~/.devops
+  source ~/.devops/bin/activate
+  ```
+
 * Run `make install` to install the necessary dependencies
 
 ### Running `app.py`

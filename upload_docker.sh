@@ -15,4 +15,4 @@ docker tag prediction:latest $dockerpath:latest
 # Step 3:
 # Push image to a docker repository
 
-docker push dmavridis/prediction:latest
+docker push $dockerpath:latest
